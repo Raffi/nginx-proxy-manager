@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker buildx build \
+  --load \
+  -t raffi/nginx-proxy-manager \
+  -f ./docker/Dockerfile \
+  .
